@@ -1,9 +1,9 @@
 <?php
-// Database configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'kprcas_attendance');
+// Database configuration for InfinityFree
+define('DB_HOST', 'sql313.infinityfree.com');
+define('DB_USER', 'if0_40319236');
+define('DB_PASS', 's1Vvgdu1Bmxp');
+define('DB_NAME', 'if0_40319236_XXX'); // Replace XXX with your actual database name
 
 // Create database connection
 try {
