@@ -1,0 +1,13 @@
+{
+    "name": "kprcas/attendance",
+    "description": "KPRCAS Attendance System with Email Authentication",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

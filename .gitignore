@@ -1,0 +1,83 @@
+# KPRCAS Attendance System - Git Ignore File
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Configuration files with sensitive data
+/login/config/email_config.php
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+/logs/
+error_log
+debug.log
+
+# Temporary files
+/tmp/
+/temp/
+*.tmp
+
+# Cache
+/cache/
+*.cache
+
+# Session files
+/sessions/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# PHPStorm
+.idea/
+
+# VSCode
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Database dumps (if any)
+*.sql.gz
+*.sql.zip
+database_backup_*.sql
+
+# Upload directories (if you add file uploads)
+/uploads/
+/files/
+
+# Node modules (if you add any frontend tooling)
+node_modules/
+
+# Package files
+*.zip
+*.rar
+*.tar.gz
+
+# Development and testing folders
+/checkings/
+/htmls/
+/ps&doc/
+/schema/
+/dashboard/

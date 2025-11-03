@@ -1,0 +1,463 @@
+/* Global Responsive Styles for KPRCAS Attendance System */
+
+/* Mobile First Approach - Base styles for mobile devices */
+
+/* Typography Responsiveness */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    h3 {
+        font-size: 1.2rem !important;
+    }
+    h4 {
+        font-size: 1.1rem !important;
+    }
+    h5 {
+        font-size: 1rem !important;
+    }
+}
+
+/* Sidebar Responsiveness */
+@media (max-width: 992px) {
+    .sidebar {
+        position: fixed !important;
+        left: -250px !important;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        z-index: 9999;
+        width: 250px;
+    }
+    
+    .sidebar.show {
+        left: 0 !important;
+    }
+    
+    .main-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding-top: 60px !important;
+    }
+    
+    .mobile-menu-toggle {
+        display: block !important;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10000;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    
+    .mobile-menu-toggle:hover {
+        transform: scale(1.05);
+    }
+    
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 9998;
+    }
+    
+    .sidebar-overlay.show {
+        display: block;
+    }
+}
+
+@media (min-width: 993px) {
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
+/* Card Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    
+    .card-body {
+        padding: 15px !important;
+    }
+    
+    .card-header {
+        padding: 12px 15px !important;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Table Responsiveness */
+@media (max-width: 992px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table {
+        min-width: 800px;
+    }
+    
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+}
+
+/* Form Responsiveness */
+@media (max-width: 576px) {
+    .form-control,
+    .form-select,
+    .btn {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    
+    .btn-lg {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    .form-label {
+        font-size: 14px;
+    }
+}
+
+/* Button Group Responsiveness */
+@media (max-width: 576px) {
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 5px;
+        border-radius: 8px !important;
+    }
+    
+    .d-flex.gap-2 {
+        flex-direction: column !important;
+    }
+    
+    .d-flex.gap-2 .btn,
+    .d-flex.gap-2 a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Grid Responsiveness */
+@media (max-width: 768px) {
+    .row > [class*='col-'] {
+        margin-bottom: 15px;
+    }
+}
+
+/* Stats Cards Responsiveness */
+@media (max-width: 576px) {
+    .stat-card {
+        margin-bottom: 15px;
+        padding: 15px !important;
+    }
+    
+    .stat-card h2,
+    .stat-card h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .stat-card p {
+        font-size: 12px;
+    }
+    
+    .stat-card .icon {
+        font-size: 2rem !important;
+    }
+}
+
+/* Modal Responsiveness */
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+}
+
+/* Login Page Responsiveness */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 30px 20px !important;
+        margin: 20px auto !important;
+    }
+    
+    .logo-circle {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    .logo-circle i {
+        font-size: 2rem !important;
+    }
+}
+
+/* Dashboard Stats Responsiveness */
+@media (max-width: 768px) {
+    .stat-card {
+        text-align: center;
+    }
+}
+
+/* Navbar/Header Responsiveness */
+@media (max-width: 576px) {
+    .page-header {
+        padding: 15px !important;
+    }
+    
+    .page-header h1 {
+        font-size: 1.3rem !important;
+    }
+    
+    .breadcrumb {
+        font-size: 12px;
+    }
+}
+
+/* Action Buttons Responsiveness */
+@media (max-width: 576px) {
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .action-buttons .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+/* Filter Forms Responsiveness */
+@media (max-width: 768px) {
+    .filter-form .row {
+        row-gap: 15px;
+    }
+}
+
+/* QR Code Display Responsiveness */
+@media (max-width: 576px) {
+    #qrcode {
+        padding: 20px !important;
+    }
+    
+    #qrcode img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    .timer {
+        font-size: 2rem !important;
+    }
+}
+
+/* Credentials Box Responsiveness */
+@media (max-width: 576px) {
+    .credentials-box {
+        padding: 20px !important;
+    }
+    
+    .credential-value {
+        font-size: 1.1rem !important;
+        word-break: break-all;
+    }
+}
+
+/* DataTables Responsiveness */
+@media (max-width: 768px) {
+    .dataTables_length,
+    .dataTables_filter {
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+    
+    .dataTables_length select {
+        width: auto !important;
+    }
+    
+    .dataTables_info,
+    .dataTables_paginate {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+}
+
+/* Alert Responsiveness */
+@media (max-width: 576px) {
+    .alert {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Padding/Margin Adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 70px 15px 15px 15px !important;
+    }
+    
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .page-header {
+        margin-top: 0 !important;
+    }
+}
+
+/* Navigation Responsiveness */
+@media (max-width: 576px) {
+    .nav-pills .nav-link {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+/* Logo Responsiveness */
+@media (max-width: 576px) {
+    .sidebar .logo h4 {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Subject Cards Responsiveness */
+@media (max-width: 576px) {
+    .class-card,
+    .subject-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .sidebar,
+    .mobile-menu-toggle,
+    .btn,
+    .no-print {
+        display: none !important;
+    }
+    
+    .main-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    
+    .card {
+        page-break-inside: avoid;
+    }
+}
+
+/* Landscape Tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+/* Small Mobile (iPhone SE, Galaxy Fold) */
+@media (max-width: 375px) {
+    body {
+        font-size: 13px;
+    }
+    
+    .btn {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 1.3rem !important;
+    }
+    
+    .card-body {
+        padding: 12px !important;
+    }
+    
+    .main-content {
+        padding: 60px 10px 10px 10px !important;
+    }
+    
+    .mobile-menu-toggle {
+        top: 8px;
+        left: 8px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .stat-card h3 {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .nav-link,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Utility Classes for Responsive */
+.mobile-only {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block !important;
+    }
+    
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+.tablet-only {
+    display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .tablet-only {
+        display: block !important;
+    }
+}
